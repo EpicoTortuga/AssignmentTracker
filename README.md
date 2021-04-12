@@ -1,2 +1,2 @@
-# CanvasAssignments
-Creates a widget capable of accessing the Canvas API and pulling down assignments.
+# Canvas Assignment Tracker
+Tired of the Canvas mobile app? This widget will display all of your upcoming assignments in a sleek, readable fashion.
