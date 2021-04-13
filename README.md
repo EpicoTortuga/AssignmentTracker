@@ -1,3 +1,5 @@
+<a href="url"><img src="https://github.com/EpicoTortuga/AssignmentTracker/blob/main/Images/header.png" align="center" height="90%" width="90%" ></a>
+
 # Canvas Assignment Tracker
 Tired of the Canvas mobile app? This widget will display all of your upcoming assignments in a sleek, readable fashion. 
 
