@@ -3,6 +3,7 @@
 /*  Delete and replace this whole block  */
 /* ------------------------------------- */
 
+
 var params = {
   
   backgroundColor : "1c1c1c",
@@ -11,17 +12,17 @@ var params = {
   hasProfilePic : true,
   picSize : 28,
   
-  bigStackSize : 30,
-  bigDateSize : 20,
+  bigStackSize : 30, //30
+  bigDateSize : 20, //20
   
   indentLength : 10,
   upperPadding : 0,
   
-  assyStackSize : 40,
-  assyTextSize : 14,
-  assySymbolSize : 35,
-  assyTimeSize : 7,
-  assyClassSize : 7,
+  assyStackSize : 40, //45, 40
+  assyTextSize : 14, //15, 14
+  assySymbolSize : 35, //40, 35
+  assyTimeSize : 7, //8, 7
+  assyClassSize : 7, //8, 7
   
   remainStackSize : 20,
   remainTextSize : 14,
@@ -97,10 +98,10 @@ for (const prop in prefixes) {
     temp = tempJson[j].assignment
     let tempDate = new Date(temp.due_at)
     let checkDate = parseInt(dateC.string(tempDate))
+    let f = classes.find(findByProperty("code", temp.course_id))
     
-    
-    if (today <= checkDate) {
-      let o = classes.find(findByProperty("code", temp.course_id)).order
+    if (today <= checkDate && f != undefined) {
+      let o = f.order
       
       let temp2 = {
         name : temp.name,
