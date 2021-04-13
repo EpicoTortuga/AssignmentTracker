@@ -13,7 +13,7 @@ Only requires one setup - then it will work in the background with no extra user
 
 3. Create a new script.
 
-4. Navigate to this page, copy all of the code, and paste it into your new script.
+4. Copy all of the code on [this page](https://github.com/EpicoTortuga/AssignmentTracker/blob/main/WidgetCode), and paste it into your new script.
 
 5. Replace the marked section at the top of the script with the code you generated earlier.
 
