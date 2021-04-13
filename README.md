@@ -21,4 +21,4 @@ Only requires one setup - then it will work in the background with no extra user
 
 # Thank you!
 
-Please send any suggestions or questions to my Instagram, @ben.tastic_
+Please send any suggestions or questions to my Instagram, *@ben.tastic_*
