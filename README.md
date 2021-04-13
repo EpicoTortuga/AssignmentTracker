@@ -1,5 +1,6 @@
 # Canvas Assignment Tracker
-Tired of the Canvas mobile app? This widget will display all of your upcoming assignments in a sleek, readable fashion. Only requires one setup - then it will work in the background with no extra user input required.
+Tired of the Canvas mobile app? This widget will display all of your upcoming assignments in a sleek, readable fashion. 
+Only requires one setup - then it will work in the background with no extra user input required.
 
 # Setup Guide
 
