@@ -7,7 +7,7 @@ Only requires one setup - then it will work in the background with no extra user
 
 # Setup Guide
 
-1. Follow the instructions on [this page](https://docs.google.com/document/d/1X1ML6tQHWNvEXuhORX2N_TMJwtaVBaPAdpejnXwAyiU/edit?usp=sharing).
+1. Follow the instructions [here](https://docs.google.com/document/d/1X1ML6tQHWNvEXuhORX2N_TMJwtaVBaPAdpejnXwAyiU/edit?usp=sharing) to generate your personal code.
 
 2. If you don't have it already, download the "Scriptable" app from the App Store.
 
