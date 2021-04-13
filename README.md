@@ -3,7 +3,7 @@ Tired of the Canvas mobile app? This widget will display all of your upcoming as
 
 # Setup Guide
 
-1. Follow the instructions on this page.
+1. Follow the instructions on [this page](https://github.com/EpicoTortuga/AssignmentTracker/blob/main/Generator-Guide.md).
 
 2. If you don't have it already, download the "Scriptable" app from the App Store.
 
