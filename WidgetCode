@@ -10,17 +10,17 @@ var params = {
   hasProfilePic : true,
   picSize : 28,
   
-  bigStackSize : 30, //30
-  bigDateSize : 20, //20
+  bigStackSize : 30,
+  bigDateSize : 20,
   
   indentLength : 10,
   upperPadding : 0,
   
-  assyStackSize : 40, //45, 40
-  assyTextSize : 14, //15, 14
-  assySymbolSize : 35, //40, 35
-  assyTimeSize : 7, //8, 7
-  assyClassSize : 7, //8, 7
+  assyStackSize : 40,
+  assyTextSize : 14,
+  assySymbolSize : 35,
+  assyTimeSize : 7,
+  assyClassSize : 7,
   
   remainStackSize : 20,
   remainTextSize : 14,
