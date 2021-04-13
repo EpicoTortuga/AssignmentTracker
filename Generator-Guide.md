@@ -5,7 +5,7 @@ A video version of these directions is provided here.
 # Directions
 1. First, copy the generator document. Make sure you have Canvas opened in another tab.
 
-2. Before you do anything, the scripts running behind this generator must be authenticated. Do do this, click on the "reset" button on the bottom of the document, and wait for the notification that asks for authentication. This will take a few seconds.
+2. Before you do anything, the scripts running behind this generator must be authenticated. Do do this, click on any button on the document, and wait for the notification that asks for authentication. This will take a few seconds.
 
 3. Click on the "Continue" button, then on the next page, click "Advanced," then "Co to Assignment Checker Code Generator." Select your account, then click "Allow."    
    
