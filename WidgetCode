@@ -12,17 +12,17 @@ var params = {
   hasProfilePic : true,
   picSize : 28,
   
-  bigStackSize : 30, //30
-  bigDateSize : 20, //20
+  bigStackSize : 30,
+  bigDateSize : 20,
   
   indentLength : 10,
   upperPadding : 0,
   
-  assyStackSize : 40, //45, 40
-  assyTextSize : 14, //15, 14
-  assySymbolSize : 35, //40, 35
-  assyTimeSize : 7, //8, 7
-  assyClassSize : 7, //8, 7
+  assyStackSize : 40,
+  assyTextSize : 14,
+  assySymbolSize : 35,
+  assyTimeSize : 7,
+  assyClassSize : 7,
   
   remainStackSize : 20,
   remainTextSize : 14,
@@ -165,6 +165,7 @@ dayF.dateFormat = params.dateFormat
 
 const widget = new ListWidget()
 widget.backgroundColor= new Color(params.backgroundColor)
+var textColor = new Color("ffffff")
 var hasPfp = false
 
 var size = getWidgetSizeInPoint("large")
@@ -196,7 +197,8 @@ for (let prop = 0; prop < json.length; prop++) {
       var todayTxt = today.addText(dayW.string(new Date(currA.date)))
     else
       var todayTxt = today.addText(dayF.string(new Date(currA.date)))  
-    todayTxt.font = getFont("sbRound",params.bigDateSize)  
+    todayTxt.font = getFont("sbRound",params.bigDateSize)    
+    //todayTxt.textColor = textColor
     if (!hasPfp && params.hasProfilePic) {
       hasPfp = true;
       today.addSpacer()
@@ -261,13 +263,15 @@ for (let prop = 0; prop < json.length; prop++) {
   rightStack.setPadding(5, 0, 0, 0)
   let upperStack = rightStack.addStack()
   let nameTxt = upperStack.addText(name)
+  nameTxt.textColor = textColor
   nameTxt.font = getFont("sbRound", params.assyTextSize)
   nameTxt.lineLimit = 1
   upperStack.addSpacer()
   let underStack = rightStack.addStack()
   underStack.centerAlignContent()
   let dateTxt = underStack.addText(date + " • " )
-  dateTxt.font = getFont("sbRound", params.assyTimeSize)
+  dateTxt.font = getFont("sbRound", params.assyTimeSize)  
+  dateTxt.textColor = textColor
   let classTxt = underStack.addText(clss)
   classTxt.font = getFont("sbRound",params.assyClassSize)
   classTxt.textColor = color
