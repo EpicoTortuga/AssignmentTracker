@@ -6,6 +6,8 @@
 
 var params = {
   
+  heightOffset : 0,
+  
   backgroundColor : "1c1c1c",
   dateFormat : "EEEE, MMM dd",
   
@@ -52,10 +54,12 @@ function getWidgetSizeInPoint(widgetSize = (config.runsInWidget ? config.widgetF
 
   if (widgetSize) {
     let mappedSize = sizeMap[devSize]
+    mappedSize[widgetSize][1] -= params.heightOffset
     if (mappedSize) {
       widgetSizeInPoint = new Size(...mappedSize[widgetSize])
     }
   }
+  
   return widgetSizeInPoint
 }
 
@@ -169,6 +173,8 @@ var textColor = new Color("ffffff")
 var hasPfp = false
 
 var size = getWidgetSizeInPoint("large")
+
+
 var sizeCount = params.upperPadding
 
 for (let prop = 0; prop < json.length; prop++) {
@@ -183,7 +189,7 @@ for (let prop = 0; prop < json.length; prop++) {
   let day = currA.day
   
   if (prop == 0 || day != json[prop-1].day) {
-    if (sizeCount >= size.height-(params.bigStackSize+params.assyStackSize)) break;
+    if (sizeCount >= size.width-(params.bigStackSize+params.assyStackSize)) break;
     let today = widget.addStack()
     today.size = new Size(0,params.bigStackSize)
     sizeCount += params.bigStackSize;
@@ -198,7 +204,7 @@ for (let prop = 0; prop < json.length; prop++) {
     else
       var todayTxt = today.addText(dayF.string(new Date(currA.date)))  
     todayTxt.font = getFont("sbRound",params.bigDateSize)    
-    //todayTxt.textColor = textColor
+    todayTxt.textColor = textColor
     if (!hasPfp && params.hasProfilePic) {
       hasPfp = true;
       today.addSpacer()
@@ -212,7 +218,7 @@ for (let prop = 0; prop < json.length; prop++) {
   if (typeof json[prop+1] != 'undefined') {
     let dateRn = dateC.string(new Date(currA))
     let dateNxt = dateC.string(new Date(json[prop+1]))
-    if ((dateRn === dateNxt) && (sizeCount >= (size.height-(2*params.assyStackSize)))) {
+    if ((dateRn === dateNxt) && (sizeCount >= (size.width-(2*params.assyStackSize)))) {
       
       let tot = 0
       for (let i = prop; i<json.length; i++) {
@@ -278,7 +284,7 @@ for (let prop = 0; prop < json.length; prop++) {
   //classTxt.textOpacity = 0.75
   
   
-  if (sizeCount >= size.height-params.assyStackSize) 
+  if (sizeCount >= size.width-params.assyStackSize) 
     break;
 }
 
