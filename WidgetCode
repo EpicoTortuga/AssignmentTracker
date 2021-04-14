@@ -143,7 +143,7 @@ function sortByProperty(property, a, b) {
 
 json.sort(  
   function(a,b) {
-    if (a.day === b.day)
+    if (a.date === b.date)
       return sortByProperty("order", a, b)
     else
       return sortByProperty("date", a, b)
