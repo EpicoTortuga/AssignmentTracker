@@ -23,4 +23,4 @@ Only requires one setup - then it will work in the background with no extra user
 
 Please send any suggestions or questions to my Instagram, *@ben.tastic_*
 
-<sup><sub>Especially if it doesn't fit in the widget properly please tell let me know.</sub></sup>
+<sup><sub>Especially if it doesn't fit in the widget properly please tell let me know</sub></sup>
