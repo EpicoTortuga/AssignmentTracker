@@ -1,4 +1,4 @@
-<a href="url"><img src="https://github.com/EpicoTortuga/AssignmentTracker/blob/main/Images/header.png" align="center" height="90%" width="90%" ></a>
+<a href="url"><img src="Images/header.png" align="center" height="90%" width="90%" ></a>
 
 # Canvas Assignment Tracker
 Tired of the Canvas mobile app? This widget will display all of your upcoming assignments in a sleek, readable fashion. 
@@ -13,7 +13,7 @@ Only requires one setup - then it will work in the background with no extra user
 
 3. Create a new script.
 
-4. Copy all of the code on [this page](https://github.com/EpicoTortuga/AssignmentTracker/blob/main/WidgetCode), and paste it into your new script.
+4. Copy all of the code on [this page](WidgetCode), and paste it into your new script.
 
 5. Replace the marked section at the top of the script with the code you generated earlier.
 
